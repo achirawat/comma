@@ -1,14 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from "@angular/forms"
 
 import { AppComponent } from './app.component';
+import { InputcommaComponent } from "./input-comma.component";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InputcommaComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
