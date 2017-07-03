@@ -2,8 +2,8 @@ import { Component, Input } from '@angular/core';
 
 @Component ({
     selector: 'comma-input',
-    template: `<input type="text" name="inputVal" [(ngModel)]='inputV' (keyup)="valueChange()" >`
-    // templateUrl: 'input-comma.component.html'
+    // template: `<input type="text" name="inputVal" [(ngModel)]='inputV' (keyup)="valueChange()" >`
+    templateUrl: 'input-comma.component.html'
 })
 
 export class InputcommaComponent {
@@ -21,7 +21,7 @@ export class InputcommaComponent {
         }else{
             onlyNum = noCommaV;
         } // นับจำนวนตัวเลข
-
+        this.inputV = "";
         var returnVal = "";
         for(var i = onlyNum.length; i-3 >= 0; i = i-3){
                 returnVal = "," + onlyNum.substring(i-3, i) + returnVal;
